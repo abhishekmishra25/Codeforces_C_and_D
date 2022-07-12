@@ -15,21 +15,22 @@ public:
         for (int i = 0; i < n; i++)
         {
             if (count == k)
-                if (s[i] == '(')
+                break;
+            if (s[i] == '(')
+                st.push(i);
+            else
+            {
+                if (st.empty())
                     st.push(i);
                 else
                 {
-                    if (st.empty())
-                        st.push(i);
-                    else
-                    {
-                        arr[i] = 1;
-                        int k = st.top();
-                        arr[k] = 1;
-                        st.pop();
-                        count += 2;
-                    }
+                    arr[i] = 1;
+                    int k = st.top();
+                    arr[k] = 1;
+                    st.pop();
+                    count += 2;
                 }
+            }
         }
         for (int i = 0; i < n; i++)
         {
