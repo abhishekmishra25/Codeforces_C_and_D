@@ -34,7 +34,7 @@ public:
         {
             if (sum - n >= 0)
             {
-                cout << n << " " << sum << endl;
+                // cout << n << " " << sum << endl;
                 ans.pb(n);
                 sum -= n;
             }
