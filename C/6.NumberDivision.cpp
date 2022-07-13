@@ -17,33 +17,6 @@ class solution
 public:
     void numDivision(int n)
     {
-        // if (n % 4 == 0)
-        // {
-        //     cout << 0 << endl;
-        //     for (int i = 1; i <= n; i += 2)
-        //         cout << i << " ";
-        //     cout << endl;
-        // }
-        // else if (n % 2 == 0 and n % 4 != 0)
-        // {
-        //     cout << 1 << endl;
-        //     int i = 1, j = n;
-        //     while (i < j)
-        //     {
-        //         if (j - i == 1)
-        //         {
-        //             cout << j << endl;
-        //         }
-        //         else
-        //         {
-        //             cout << i << " " << j << " ";
-        //             i += 2;
-        //             j -= 2;
-        //         }
-        //     }
-        // }
-        // {
-        // }
         ll sum = n * (n + 1) / 2;
 
         if (sum % 2 == 0)
@@ -61,6 +34,7 @@ public:
         {
             if (sum - n >= 0)
             {
+                cout << n << " " << sum << endl;
                 ans.pb(n);
                 sum -= n;
             }
