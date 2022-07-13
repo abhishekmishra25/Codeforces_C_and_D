@@ -17,7 +17,7 @@ class solution
 public:
     void numDivision(int n)
     {
-        ll sum = n * (n + 1) / 2;
+        ll sum = (ll)n * ((ll)n + 1) / 2;
 
         if (sum % 2 == 0)
         {
