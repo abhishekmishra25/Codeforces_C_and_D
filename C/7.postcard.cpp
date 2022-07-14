@@ -12,33 +12,33 @@ typedef pair<int, int> pii;
 typedef vector<vector<int>> vii;
 const ll inf = 1e18;
 const int N = 1e5 + 5;
-#define print(a) cout << a << "\n"
+#define print(a) cout << a << endl
 class solution
 {
 public:
     void postcard(int k, string s)
     {
-        int len = 0, sf = 0, cc = 0;
+        int lenS = 0, snowflake = 0, candyCane = 0;
         for (char c : s)
         {
             if (c == '*')
-                sf++;
+                snowflake++;
             else if (c == '?')
-                cc++;
+                candyCane++;
             else
-                len++;
+                lenS++;
         }
 
-        if (k < len)
+        if (k < lenS)
         {
-            if (len - (sf + cc) > k)
+            if (lenS - (snowflake + candyCane) > k)
             {
                 print("Impossible");
                 return;
             }
 
             string ans;
-            int left = len - k;
+            int left = lenS - k;
             ins(i, 0, s.size())
             {
                 char c = s[i + 1];
@@ -57,14 +57,14 @@ public:
         }
         else
         {
-            if (k > len && sf == 0)
+            if (k > lenS && snowflake == 0)
             {
                 print("Impossible");
                 return;
             }
 
             string ans;
-            int need = k - len;
+            int need = k - lenS;
             ins(i, 0, s.size())
             {
                 char c = s[i + 1];
