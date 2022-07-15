@@ -19,7 +19,6 @@ public:
     void seatArrangement(const vector<vector<char>> &arr, int n, int m, int k)
     {
         int maxSum = 0, currSum = 0;
-        // row major
         ins(i, 0, n)
         {
             if (m - k >= 0)
