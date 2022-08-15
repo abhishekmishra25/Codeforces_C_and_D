@@ -55,8 +55,43 @@ const ll MOD = 1e9 + 7;
 const ll INF = 1e9;
 const ld EPS = 1e-9;
 
+int getNext(int k)
+{
+    i
+}
+
+void solve(int n, int k, int a, int b)
+{
+    if ((a == 0 || b == 0) && (a + b > k))
+    {
+        cout << "NO" << endl;
+        return;
+    }
+    if (a >= b)
+    {
+        int dir = 0;
+        string ans = "";
+        char A = 'G', B = 'B';
+        for (int i = 0; i < n; i += k)
+        {
+            int a = k;
+            if (dir == 0)
+                while (k--)
+                {
+                    dir = 1;
+                }
+        }
+    }
+    else
+    {
+    }
+    return;
+}
+
 signed_main()
 {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
     int n, k, a, b;
     cin >> n >> k >> a >> b;
 }
