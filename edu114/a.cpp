@@ -2,6 +2,7 @@
 #pragma GCC optimize("Ofast")
 #pragma GCC target("avx,avx2,fma")
 #include <bits/stdc++.h>
+#include "hello.cpp"
 using namespace std;
 #define ins(i, a, n) for (int i = a; i < n; i++)
 #define des(i, a, n) for (int i = n - 1; i >= a; i--)
@@ -88,8 +89,9 @@ signed main()
     //     ins(i, 1, n) xo = xo & a[i];
     //     cout << xo << endl;
     // }
-    int n, k;
-    cin >> n >> k;
-    cout << solve(n, k) << endl;
+    // int n, k;
+    // cin >> n >> k;
+    // cout << solve(n, k) << endl;
+    hello h1;
     return 0;
 }
